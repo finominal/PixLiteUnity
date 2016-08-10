@@ -1,0 +1,9 @@
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\bin\Debug\PixliteForUnity.dll
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\bin\Debug\PixliteForUnity.pdb
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\bin\Debug\eDmx.ArtNet.dll
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\bin\Debug\eDmx.ArtNet.pdb
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\obj\Debug\PixliteForUnity.csprojResolveAssemblyReference.cache
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\obj\Debug\PixliteForUnity.dll
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\obj\Debug\PixliteForUnity.pdb
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\bin\Debug\UnityEngine.dll
+C:\src\PIXELITE\ArtNet.Net-master\PixliteForUnity\bin\Debug\UnityEngine.xml

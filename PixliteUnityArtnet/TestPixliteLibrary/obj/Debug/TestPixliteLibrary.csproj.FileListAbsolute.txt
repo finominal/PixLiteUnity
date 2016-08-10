@@ -1,0 +1,12 @@
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\TestPixliteLibrary.dll
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\TestPixliteLibrary.pdb
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\PixliteForUnity.dll
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\eDmx.ArtNet.dll
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\PixliteForUnity.pdb
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\eDmx.ArtNet.pdb
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\obj\Debug\TestPixliteLibrary.csprojResolveAssemblyReference.cache
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\obj\Debug\TestPixliteLibrary.dll
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\obj\Debug\TestPixliteLibrary.pdb
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\UnityEngine.dll
+C:\src\PIXELITE\ArtNet.Net-master\TestPixliteLibrary\bin\Debug\UnityEngine.xml

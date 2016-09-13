@@ -7,3 +7,8 @@ C:\src\PIXELITE\ArtNet.Net-master\eDmx.ArtNet\bin\Debug\eDmx.ArtNet.dll
 C:\src\PIXELITE\ArtNet.Net-master\eDmx.ArtNet\bin\Debug\eDmx.ArtNet.pdb
 C:\src\PIXELITE\ArtNet.Net-master\eDmx.ArtNet\obj\Debug\eDmx.ArtNet.dll
 C:\src\PIXELITE\ArtNet.Net-master\eDmx.ArtNet\obj\Debug\eDmx.ArtNet.pdb
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\eDmx.ArtNet\bin\Debug\eDmx.ArtNet.dll
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\eDmx.ArtNet\bin\Debug\eDmx.ArtNet.pdb
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\eDmx.ArtNet\obj\Debug\eDmx.ArtNet.csprojResolveAssemblyReference.cache
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\eDmx.ArtNet\obj\Debug\eDmx.ArtNet.dll
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\eDmx.ArtNet\obj\Debug\eDmx.ArtNet.pdb

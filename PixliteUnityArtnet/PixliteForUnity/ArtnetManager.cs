@@ -18,6 +18,16 @@ namespace PixliteForUnity
             artnet.Open(IPAddress.Parse("192.168.0.2"), IPAddress.Parse("255.255.255.0"));
         }
 
+        public ArtnetManager(string ip)
+        {
+            //initialize Artnet
+            artnet = new ArtNetSocket();
+            artnet.EnableBroadcast = true;
+
+            artnet.Open(IPAddress.Parse(ip), IPAddress.Parse("255.255.255.0"));
+        }
+
+
         public void SendArtnetPacket(ArtNetDmxPacket dmxPacket)
         {
             artnet.Send(dmxPacket);

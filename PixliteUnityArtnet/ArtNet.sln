@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixliteForUnity", "PixliteF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPixliteLibrary", "TestPixliteLibrary\TestPixliteLibrary.csproj", "{6EC8E551-6CF9-45A2-A112-531C9FB11339}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kadmium-sacn", "kadmium-sacn\kadmium-sacn.csproj", "{2EE801E6-3691-40C3-9F4A-CED126365999}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6EC8E551-6CF9-45A2-A112-531C9FB11339}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EC8E551-6CF9-45A2-A112-531C9FB11339}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EC8E551-6CF9-45A2-A112-531C9FB11339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE801E6-3691-40C3-9F4A-CED126365999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE801E6-3691-40C3-9F4A-CED126365999}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE801E6-3691-40C3-9F4A-CED126365999}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE801E6-3691-40C3-9F4A-CED126365999}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

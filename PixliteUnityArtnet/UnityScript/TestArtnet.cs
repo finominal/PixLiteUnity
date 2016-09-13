@@ -2,7 +2,7 @@
 using PixliteForUnity;
 using System.Collections.Generic;
 
-public class TestArtnet2 : MonoBehaviour {
+public class TestArtnet : MonoBehaviour {
 
     // Use this for initialization
     Pixlite pixlite;
@@ -30,10 +30,12 @@ public class TestArtnet2 : MonoBehaviour {
         {
             if (i == counter % numPixelsPerString)
             {
+			    section1.Add(new Color32 { r = 10 });
                 section2.Add(new Color32 { g = 10 });
             }
             else
             {
+			    section1.Add(new Color32());
                 section2.Add(new Color32());
             }
         }
@@ -43,7 +45,7 @@ public class TestArtnet2 : MonoBehaviour {
 
         pixlite.SendAllSections(allSections);
 
-        Debug.Log(counter.ToString());
+        Debug.Log("Artnet " + counter.ToString());
 
         counter++;
 

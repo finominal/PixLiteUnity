@@ -20,3 +20,11 @@ C:\src\PIXELITE\ArtNet.Net-master\Sample\bin\Debug\eDmx.ArtNet.dll
 C:\src\PIXELITE\ArtNet.Net-master\Sample\bin\Debug\eDmx.ArtNet.pdb
 C:\src\PIXELITE\ArtNet.Net-master\Sample\obj\Debug\Sample.CSharp.csprojResolveAssemblyReference.cache
 C:\src\PIXELITE\ArtNet.Net-master\Sample\bin\Debug\Sample.exe.config
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\bin\Debug\Sample.exe.config
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\bin\Debug\Sample.exe
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\bin\Debug\Sample.pdb
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\bin\Debug\eDmx.ArtNet.dll
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\bin\Debug\eDmx.ArtNet.pdb
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\obj\Debug\Sample.CSharp.csprojResolveAssemblyReference.cache
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\obj\Debug\Sample.exe
+C:\src\PIXELITE\PixLiteUnity\PixliteUnityArtnet\Sample\obj\Debug\Sample.pdb

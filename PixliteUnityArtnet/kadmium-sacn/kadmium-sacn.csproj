@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7B006174-7EBB-4BA1-80CD-67F8E80FD82A}</ProjectGuid>
+    <ProjectGuid>{2EE801E6-3691-40C3-9F4A-CED126365999}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PixliteForUnity</RootNamespace>
-    <AssemblyName>PixliteForUnity</AssemblyName>
+    <RootNamespace>kadmium_sacn</RootNamespace>
+    <AssemblyName>kadmium-sacn</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -37,25 +39,14 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArtnetManager.cs" />
-    <Compile Include="IPixlite.cs" />
-    <Compile Include="Pixlite.cs" />
+    <Compile Include="BigEndianBinaryReader.cs" />
+    <Compile Include="BigEndianBinaryWriter.cs" />
+    <Compile Include="SACNSender.cs" />
+    <Compile Include="SACNCommon.cs" />
+    <Compile Include="SACNPacket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\eDmx.ArtNet\eDmx.ArtNet.csproj">
-      <Project>{82991d6f-d554-41ee-af8b-a110fce19d00}</Project>
-      <Name>eDmx.ArtNet</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\kadmium-sacn\kadmium-sacn.csproj">
-      <Project>{2ee801e6-3691-40c3-9f4a-ced126365999}</Project>
-      <Name>kadmium-sacn</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -65,4 +56,8 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="AfterBuild" Condition=" '$(Configuration)' == 'Release'">
+    <Exec Command="nuget pack kadmium-sacn.csproj -Prop Configuration=Release">
+    </Exec>
+  </Target>
 </Project>

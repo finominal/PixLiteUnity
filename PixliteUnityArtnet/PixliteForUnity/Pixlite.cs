@@ -25,20 +25,20 @@ namespace PixliteForUnity
             sacn = new SACNSender(new System.Guid(), "Unity");
         }
 
-        public void SendAllSections(List<List<byte>> sections)
+        public void SendAllSectionsArtnet(List<List<byte>> sections)
         {
             int sectionsProcessed = 0;
 
             foreach (var section in sections)
             {
-                SendOneSection(section, sectionsProcessed );
+                SendOneSectionArtnet(section, sectionsProcessed );
 
                 //update that this section was completed
                 sectionsProcessed++;
             }
         }
 
-        public void SendOneSection(List<byte> sectionColors, int sectionNumber )
+        public void SendOneSectionArtnet(List<byte> sectionColors, int sectionNumber )
         {
             int universesProcessed;
             byte[] bufferRemainder;
@@ -127,13 +127,13 @@ namespace PixliteForUnity
 
 
 
-        public void SendAllSections(List<List<Color32>> sections)
+        public void SendAllSectionsArtnet(List<List<Color32>> sections)
         {
             int sectionsProcessed = 0;
 
             foreach (var section in sections)
             {
-                SendOneSection(section, sectionsProcessed);
+                SendOneSectionArtnet(section, sectionsProcessed);
 
                 //update that this section was completed
                 sectionsProcessed++;
@@ -142,7 +142,7 @@ namespace PixliteForUnity
 
 
  
-        public void SendOneSection(List<Color32> sectionData, int sectionNumber)
+        public void SendOneSectionArtnet(List<Color32> sectionData, int sectionNumber)
         {
             int universesProcessed;
             byte[] bufferRemainder;

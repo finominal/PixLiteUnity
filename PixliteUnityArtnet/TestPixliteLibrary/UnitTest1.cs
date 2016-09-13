@@ -49,7 +49,7 @@ namespace TestPixliteLibrary
                 allSections.Add(section1);
                 allSections.Add(section2);
 
-                pixlite.SendAllSections(allSections);
+                pixlite.SendAllSectionsArtnet(allSections);
 
                 counter++;
                 Thread.Sleep(33);
@@ -96,7 +96,7 @@ namespace TestPixliteLibrary
                 allSections.Add(section1);
                 allSections.Add(section2);
 
-                pixlite.SendAllSections(allSections);
+                pixlite.SendAllSectionsArtnet(allSections);
 
                 counter++;
                 Thread.Sleep(33);

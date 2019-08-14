@@ -1,0 +1,63 @@
+﻿
+        private void CompileSections(List<byte> sectionColors, int sectionNumber, out int universesProcessed, out byte[] bufferRemainder)
+        {
+            int bytesProcessedInSection = 0; //or current?
+            universesProcessed = 0;
+            int completeUniversesToProcess = (sectionColors.Count / 510); //add universesProcessed 
+            int remainingBytesToProcess = sectionColors.Count % 510;
+
+
+            //PROCESS FULL UNIVERSES (more than 510 bytes of color data) 
+            while (universesProcessed < completeUniversesToProcess)
+            {
+                var buffer = new byte[510];
+                var bufferIndex = 0;
+
+                while (bufferIndex < 510)
+                {
+                    buffer[bufferIndex] = sectionColors[bytesProcessedInSection];
+                    bufferIndex++;
+                }
+
+                //SendData(buffer, CalculateUniverse(universesProcessed, sectionNumber));
+
+                bytesProcessedInSection += bufferIndex;
+                universesProcessed++;
+            }
+
+
+            //PROCESSS REMAINING DATA IN THE LAST UNIVERSE 
+            bufferRemainder = new byte[510];
+            for (int x = 0; x < remainingBytesToProcess; x++)
+            {
+
+                bufferRemainder[x] = sectionColors[bytesProcessedInSection];
+                bytesProcessedInSection++;
+            }
+        }
+
+        private void SendDataToSACN(byte[] buffer, short universe)
+        {
+            sacn.Send(universe, buffer);
+        }
+
+
+        private short CalculateUniverse(int universesProcessed, int sectionsProcessed)
+        {
+            return (short)(universesProcessed + (sectionsProcessed * 6));
+        }
+
+
+
+        public void SendAllSections(List<List<Color32>> sections)
+        {
+            int sectionsProcessed = 0;
+
+            foreach (var section in sections)
+            {
+                SendOneSection(section, sectionsProcessed);
+
+                //update that this section was completed
+                sectionsProcessed++;
+            }
+        }

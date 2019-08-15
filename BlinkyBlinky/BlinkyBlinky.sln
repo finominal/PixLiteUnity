@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kadmium-sacn", "kadmium-sac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlinkyNetwork.Tests", "BlinkyNetworkTests\BlinkyNetwork.Tests.csproj", "{8323D357-0AD9-407A-925D-11C1794321AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlnkyLights", "BlnkyLights\BlnkyLights.csproj", "{0A32F3DC-2B6A-43E9-A9AA-09E6F38E8D91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlinkyLights", "BlnkyLights\BlinkyLights.csproj", "{0A32F3DC-2B6A-43E9-A9AA-09E6F38E8D91}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DF89FD5E-3DA8-4556-94D8-E12DDD916EFF}"
 	ProjectSection(SolutionItems) = preProject

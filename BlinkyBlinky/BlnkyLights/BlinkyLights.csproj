@@ -7,8 +7,8 @@
     <ProjectGuid>{0A32F3DC-2B6A-43E9-A9AA-09E6F38E8D91}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlnkyLights</RootNamespace>
-    <AssemblyName>BlnkyLights</AssemblyName>
+    <RootNamespace>BlinkyLights</RootNamespace>
+    <AssemblyName>BlinkyLights</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -44,7 +44,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fixture.cs" />
     <Compile Include="Pixel.cs" />
+    <Compile Include="PixelArray.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

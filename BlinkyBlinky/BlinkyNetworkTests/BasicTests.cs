@@ -30,7 +30,7 @@ namespace BlinkyNetwork.Tests
         {
             LoadDevices();
             var devices = dmxNetworks.ListRegisteredDevices();
-            short universeId = 0;
+            short universeId = 1;
 
             foreach (var device in devices)
             {
@@ -58,8 +58,8 @@ namespace BlinkyNetwork.Tests
         private void LoadDevices()
         {
             dmxNetworks = new DmxNetworkManager();
-            dmxNetworks.AddNetworkDevice("Pixlite16", "10.1.1.10", DMXProtocol.sACN);
-            dmxNetworks.AddNetworkDevice("LEDMX1", "10.1.1.20", DMXProtocol.Artnet);
+            dmxNetworks.AddNetworkDevice("Pixlite16", "192.168.20.50", DMXProtocol.sACN);
+            //dmxNetworks.AddNetworkDevice("LEDMX1", "10.1.1.20", DMXProtocol.Artnet);
         }
     }
 }

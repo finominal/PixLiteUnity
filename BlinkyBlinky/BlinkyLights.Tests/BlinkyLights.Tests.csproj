@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8323D357-0AD9-407A-925D-11C1794321AA}</ProjectGuid>
+    <ProjectGuid>{F7C71470-FFA3-4A67-8EFC-FC6EA4E61371}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlinkyNetwork.Tests</RootNamespace>
-    <AssemblyName>BlinkyNetwork.Tests</AssemblyName>
+    <RootNamespace>BlinkyLights.Tests</RootNamespace>
+    <AssemblyName>BlinkyLights.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,13 +52,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NetworkTests.cs" />
+    <Compile Include="SetupNetworkTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlinkyNetwork\BlinkyNetwork.csproj">

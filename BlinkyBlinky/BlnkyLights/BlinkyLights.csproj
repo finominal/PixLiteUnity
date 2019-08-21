@@ -46,8 +46,11 @@
   <ItemGroup>
     <Compile Include="Fixture.cs" />
     <Compile Include="Pixel.cs" />
-    <Compile Include="PixelArray.cs" />
+    <Compile Include="LedChain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TODO\Ideas.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

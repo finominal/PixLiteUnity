@@ -5,15 +5,16 @@ namespace BlinkyLights
     public class Pixel
     {
         public Color color;
-        public Vector3 vector;
+        public Vector3 origin { get; private set; }
+        public Vector3 location { get; private set; }
 
         public float r => color.r;
         public float g => color.g;
         public float b => color.b;
 
-        public float x => vector.x;
-        public float y => vector.y;
-        public float z => vector.z;
+        public float x => location.x;
+        public float y => location.y;
+        public float z => location.z;
 
         public Pixel() { }
 
@@ -25,8 +26,13 @@ namespace BlinkyLights
         public Pixel(Color c, Vector3 v)
         {
             color = c;
-            vector = v;
+            origin = location = v;
         }
-        
+
+        public void Relocate(Vector3 relocationPoint)
+        {
+            location = relocationPoint;
+        }
+
     }
 }

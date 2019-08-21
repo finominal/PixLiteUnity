@@ -1,4 +1,10 @@
-﻿
+﻿Dress functions for Intellisense
+Abstract FixtureFeatures
+Dependancy Incjection? 
+Turn Network Implementation into a Factory
+
+
+COMPILE CHAINS
         private void CompileSections(List<byte> sectionColors, int sectionNumber, out int universesProcessed, out byte[] bufferRemainder)
         {
             int bytesProcessedInSection = 0; //or current?

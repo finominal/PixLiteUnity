@@ -4,25 +4,29 @@ using BlinkyNetwork;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using System.Runtime.InteropServices;
 
 namespace BlinkyLights.Tests
 {
+
     [TestClass]
     public class SetupNetworkTests
     {
         private DmxNetworkManager dmxNetworks;
-        private List<Fixture> fixtures; 
+        private List<Fixture> fixtures;
 
-        [TestMethod]
-        public void LoadControllerAndFixtures()
+        [TestInitialize]
+        public void Start()
         {
-            dmxNetworks = new DmxNetworkManager();
-            LoadDMXCotrollers(); //load each DMX Controller Hardware (per IP) 
-            fixtures = LoadFixtures();
-
-            var x = 1;
+            Initialize();
         }
 
+        private void Initialize()
+        {
+            dmxNetworks = LoadDMXCotrollers(); //load each DMX Controller Hardware (per IP) 
+            fixtures = LoadFixtures();
+        }
+   
         private List<Fixture> LoadFixtures()
         {
             var fixtures = new List<Fixture>();
@@ -34,19 +38,19 @@ namespace BlinkyLights.Tests
         {
             var wing = new Fixture("LeftWing");
 
-            wing.AddLedChain(GetFakeLedChainWingTop());
-            wing.AddLedChain(GetFakeLedChainWingBottom());
+            wing.AddLedChain(GetMockLedChainWingTop());
+            wing.AddLedChain(GetMockLedChainWingBottom());
 
             wing.SetFixtureLocation(new Vector3(1000, 500, 500));
 
+            //Rotate the vecotrs
             var rotation = new Vector3(0, 0, 45);
-
-            //wing.RotateFixture(rotation);
+            //wing.RotateFixture(rotation); //Dependancy on Unitys Libraries. 
 
             return wing;
         }
 
-        private static LedChain GetFakeLedChainWingTop()
+        private static LedChain GetMockLedChainWingTop()
         {
             var ledChainTop = new LedChain("LeftWingTop");
             for (var x = 0; x < 10; x++)
@@ -60,13 +64,13 @@ namespace BlinkyLights.Tests
             return ledChainTop;
         }
 
-        private static LedChain GetFakeLedChainWingBottom()
+        private static LedChain GetMockLedChainWingBottom()
         {
             //fake an led chain for the bottm section of the wing
             var ledChainBottom = new LedChain("LeftWingBottom");
             for (var x = 0; x < 10; x++)
             {
-                for (var y = -1; y > 11; y--)
+                for (var y = -1; y > -11; y--)
                 {
                     ledChainBottom.AddPixel(new Pixel(new Color(100, 0, 100), new Vector3(x, y)));
                 }
@@ -96,11 +100,13 @@ namespace BlinkyLights.Tests
             return dmxBytes;
         }
 
-        private void LoadDMXCotrollers()
+        private DmxNetworkManager LoadDMXCotrollers()
         {
-            dmxNetworks = new DmxNetworkManager();
+            var dmxNetworks = new DmxNetworkManager();
             dmxNetworks.AddNetworkDevice("Pixlite16", "192.168.20.50", DMXProtocol.sACN);
             //dmxNetworks.AddNetworkDevice("LEDMX1", "10.1.1.20", DMXProtocol.Artnet);
+
+            return dmxNetworks;
         }
     }
 }
